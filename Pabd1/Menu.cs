@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 using Bunifu.Framework.UI;
+using System.Data.SqlClient;
 
 namespace Pabd1
 {
@@ -22,10 +23,6 @@ namespace Pabd1
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'rentCarDataSet2.RentData' table. You can move, or remove it, as needed.
-            this.rentDataTableAdapter1.Fill(this.rentCarDataSet2.RentData);
-            // TODO: This line of code loads data into the 'rentCarDataSet1.RentData' table. You can move, or remove it, as needed.
-            this.rentDataTableAdapter.Fill(this.rentCarDataSet1.RentData);
 
         }
 
@@ -65,6 +62,57 @@ namespace Pabd1
         }
 
         private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM RentData", conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(" insert into RentData values (@No,@Nama,@Alamat,@NoTelpon,@Unit,@Lama,@Mulai,@Akhir,@Status) ", conn);
+            cmd.Parameters.AddWithValue("@No", int.Parse(text_No.Text));
+            cmd.Parameters.AddWithValue("@Nama",text_nama.Text);
+            cmd.Parameters.AddWithValue("@Alamat", text_alamat.Text);
+            cmd.Parameters.AddWithValue("@NoTelepon", text_telp.Text);
+
+            string selectedUnit = comboBox1.SelectedItem.ToString();
+            cmd.Parameters.AddWithValue("@Unit", selectedUnit);
+
+            cmd.Parameters.AddWithValue("@Lama", text_lama.Text);
+            cmd.Parameters.AddWithValue("@Mulai", DatePicker1.Value);
+            cmd.Parameters.AddWithValue("@Akhir", DatePicker2.Value);
+
+            string selectedStatus = comboBox2.SelectedItem.ToString();
+            cmd.Parameters.AddWithValue("@Status", selectedStatus);
+
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+            MessageBox.Show("Berhasil Di Tambahkan")
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
