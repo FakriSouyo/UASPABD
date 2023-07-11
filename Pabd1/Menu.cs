@@ -68,7 +68,7 @@ namespace Pabd1
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
 
         private void Button5_Click(object sender, EventArgs e)
@@ -89,7 +89,7 @@ namespace Pabd1
             cmd.Parameters.AddWithValue("@No", int.Parse(text_No.Text));
             cmd.Parameters.AddWithValue("@Nama",text_nama.Text);
             cmd.Parameters.AddWithValue("@Alamat", text_alamat.Text);
-            cmd.Parameters.AddWithValue("@NoTelepon", text_telp.Text);
+            cmd.Parameters.AddWithValue("@NoTelpon", text_telp.Text);
 
             string selectedUnit = comboBox1.SelectedItem.ToString();
             cmd.Parameters.AddWithValue("@Unit", selectedUnit);
@@ -104,7 +104,7 @@ namespace Pabd1
             cmd.ExecuteNonQuery();
 
             conn.Close();
-            MessageBox.Show("Berhasil Di Tambahkan")
+            MessageBox.Show("Berhasil Di Tambahkan");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -115,6 +115,44 @@ namespace Pabd1
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuButton8_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM RentData", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            DataGridView1.DataSource = dt;
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("Update RentData set Nama=@Nama, Alamat=@Alamat, No Telp=@NoTelpon, Unit=@Unit, lama=@Lama, Mulai=@Mulai, Akhir=@Akhir, Status=@Status where No = @No ", conn);
+
+            cmd.Parameters.AddWithValue("@No", int.Parse(text_No.Text));
+            cmd.Parameters.AddWithValue("@Nama", text_nama.Text);
+            cmd.Parameters.AddWithValue("@Alamat", text_alamat.Text);
+            cmd.Parameters.AddWithValue("@NoTelpon", text_telp.Text);
+
+            string selectedUnit = comboBox1.SelectedItem.ToString();
+            cmd.Parameters.AddWithValue("@Unit", selectedUnit);
+
+            cmd.Parameters.AddWithValue("@Lama", text_lama.Text);
+            cmd.Parameters.AddWithValue("@Mulai", DatePicker1.Value);
+            cmd.Parameters.AddWithValue("@Akhir", DatePicker2.Value);
+
+            string selectedStatus = comboBox2.SelectedItem.ToString();
+            cmd.Parameters.AddWithValue("@Status", selectedStatus);
+
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+            MessageBox.Show("Berhasil Di Update");
         }
     }
 }

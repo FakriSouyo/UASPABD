@@ -136,6 +136,14 @@
     <value>25</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuButton8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFEAAAAWCAYAAAC40nDiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABeSURBVFhH7dmhEQAgFMNQRu+ejIEH7nsEcJERT9XFts2k
+        r2TpT/Vrp0FvjAgwIsCIACMCjAgwIsCIACMCjAgwIsCIACMCjAgwIsCIACMCjAgwIsCIgDqqxmnQnZmM
+        Ddbq1N1+s9bvAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="Button5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFEAAAAWCAYAAAC40nDiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -144,11 +152,11 @@
         Ddbq1N1+s9bvAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="rentDataBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>185, 103</value>
+  <metadata name="rentDataBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>606, 60</value>
   </metadata>
-  <metadata name="rentCarDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 103</value>
+  <metadata name="rentCarDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>438, 60</value>
   </metadata>
   <data name="bunifuButton7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -283,7 +291,7 @@
   <data name="bunifuButton1.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAG5JREFUSEvtlcENwCAMAzMe+49AB0mpdD+rlRJEyoOT8rAc4x+xQwh3b2OuMVn6
+        DQAACw0B7QfALAAAAG5JREFUSEvtlcENwCAMAzMe+49AB0mpdD+rlRJEyoOT8rAc4x+xQwh3b2OuMVn6
         mMZzCguzdJ5TWHBkGOLvefy6AmRaC/h1BVGIb1SATGsBv64gCvGNCpBpLeDXFUQh/m/B8u/6OTgzJd8H
         56CY3b3FicyhBAmbAAAAAElFTkSuQmCC
 </value>
@@ -291,7 +299,7 @@
   <data name="bunifuButton1.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAG5JREFUSEvtlcENwCAMAzMe+49AB0mpdD+rlRJEyoOT8rAc4x+xQwh3b2OuMVn6
+        DQAACw0B7QfALAAAAG5JREFUSEvtlcENwCAMAzMe+49AB0mpdD+rlRJEyoOT8rAc4x+xQwh3b2OuMVn6
         mMZzCguzdJ5TWHBkGOLvefy6AmRaC/h1BVGIb1SATGsBv64gCvGNCpBpLeDXFUQh/m/B8u/6OTgzJd8H
         56CY3b3FicyhBAmbAAAAAElFTkSuQmCC
 </value>
@@ -308,7 +316,7 @@
   <data name="bunifuButton4.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAZdJREFUaEPtmM0uQ1EUhdtBw4yn4A067sBPBHPxAngC8QI8AYmY+3sBZk0Yds5E
+        DgAACw4BQL7hQQAAAZdJREFUaEPtmM0uQ1EUhdtBw4yn4A067sBPBHPxAngC8QI8AYmY+3sBZk0Yds5E
         mbRGTMw0YVtn76U3UkVL231lf8kanO/s3rtXBEkLQRD0hogsIw3EK2m3Ja7bHQw1ddw3Da7bHQy9pPDo
         Duz2+qP9osiQiCLeiCLeiCLeiCLeiCLeiCLeiCLeiCLeiCLeiCLeiCLe6KVIHfHODdf9HAyUkEcd9c0D
         UuLaneByXsdE9qkUnDdMyxHVwEnvslfKGpWC84FpmaXqBJd7NiMLVArOx6ZlnWrgpHfZK+WQSsF50bTs
@@ -321,7 +329,7 @@
   <data name="bunifuButton4.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAZdJREFUaEPtmM0uQ1EUhdtBw4yn4A067sBPBHPxAngC8QI8AYmY+3sBZk0Yds5E
+        DgAACw4BQL7hQQAAAZdJREFUaEPtmM0uQ1EUhdtBw4yn4A067sBPBHPxAngC8QI8AYmY+3sBZk0Yds5E
         mbRGTMw0YVtn76U3UkVL231lf8kanO/s3rtXBEkLQRD0hogsIw3EK2m3Ja7bHQw1ddw3Da7bHQy9pPDo
         Duz2+qP9osiQiCLeiCLeiCLeiCLeiCLeiCLeiCLeiCLeiCLeiCLeiCLe6KVIHfHODdf9HAyUkEcd9c0D
         UuLaneByXsdE9qkUnDdMyxHVwEnvslfKGpWC84FpmaXqBJd7NiMLVArOx6ZlnWrgpHfZK+WQSsF50bTs
@@ -343,7 +351,7 @@
   <data name="bunifuButton2.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAASBJREFUSEvtlTFKQ0EURT+ksFFxA0mhYK1WFmIdEMtAFhOrNLFxCy5BcA12gmQN
+        DAAACwwBP0AiyAAAASBJREFUSEvtlTFKQ0EURT+ksFFxA0mhYK1WFmIdEMtAFhOrNLFxCy5BcA12gmQN
         sUyhoKApwsuZmctAeKOQ+aTLgQP/3Tv/PxJCfrNjI8ysj+9Yywz7epxHB9oy0+M8OmAaN0a3/32/+u0v
         aIse51HfGj3Oo754gPgIH/ANjxWvQR7R6FHvDhDt4RSX+Isf2FWdIYto9KgvLbhOjY3xJl3aneqM8qoF
         l6mxRzzAAZ6rzoQDAY0e9aUFHXyNpdkz9lStkeqKBQHifbzHBc7RLSGLaPSoL32CMwxfyyEOMTBSnVFe
@@ -354,7 +362,7 @@
   <data name="bunifuButton2.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAASBJREFUSEvtlTFKQ0EURT+ksFFxA0mhYK1WFmIdEMtAFhOrNLFxCy5BcA12gmQN
+        DAAACwwBP0AiyAAAASBJREFUSEvtlTFKQ0EURT+ksFFxA0mhYK1WFmIdEMtAFhOrNLFxCy5BcA12gmQN
         sUyhoKApwsuZmctAeKOQ+aTLgQP/3Tv/PxJCfrNjI8ysj+9Yywz7epxHB9oy0+M8OmAaN0a3/32/+u0v
         aIse51HfGj3Oo754gPgIH/ANjxWvQR7R6FHvDhDt4RSX+Isf2FWdIYto9KgvLbhOjY3xJl3aneqM8qoF
         l6mxRzzAAZ6rzoQDAY0e9aUFHXyNpdkz9lStkeqKBQHifbzHBc7RLSGLaPSoL32CMwxfyyEOMTBSnVFe
@@ -374,7 +382,7 @@
   <data name="bunifuButton3.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAyNJREFUaEPtmE1IFVEUx01JU4ioaJEZSLUpS3Bj9LFuZbkLISjctCiIapFt2xhE
+        DgAACw4BQL7hQQAAAyNJREFUaEPtmE1IFVEUx01JU4ioaJEZSLUpS3Bj9LFuZbkLISjctCiIapFt2xhE
         GEJtCqKEFi3CFn0simohIQRRVMuowKiICiLpu+l37v2PvqeTF54zz4HmBz/0nnPuOVfnvXmjNQUFBQUF
         BXNFFEV1uBUP4zm8ic/wJX7ETxhj31vsBT7B63gWD+ImrFPb6sHQ1TiIbzEt3uAZbNOY7GBIAw7gL4x5
         judxH3bhBlyFi01ttb1urVw7Wu1+vIB2lWL+oF2pRm1NFxrPw6to/MQh3Kz0rKHXRrQr8h2Nu1irdHrQ
@@ -393,7 +401,7 @@
   <data name="bunifuButton3.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAyNJREFUaEPtmE1IFVEUx01JU4ioaJEZSLUpS3Bj9LFuZbkLISjctCiIapFt2xhE
+        DgAACw4BQL7hQQAAAyNJREFUaEPtmE1IFVEUx01JU4ioaJEZSLUpS3Bj9LFuZbkLISjctCiIapFt2xhE
         GEJtCqKEFi3CFn0simohIQRRVMuowKiICiLpu+l37v2PvqeTF54zz4HmBz/0nnPuOVfnvXmjNQUFBQUF
         BXNFFEV1uBUP4zm8ic/wJX7ETxhj31vsBT7B63gWD+ImrFPb6sHQ1TiIbzEt3uAZbNOY7GBIAw7gL4x5
         judxH3bhBlyFi01ttb1urVw7Wu1+vIB2lWL+oF2pRm1NFxrPw6to/MQh3Kz0rKHXRrQr8h2Nu1irdHrQ
@@ -415,12 +423,6 @@
   <metadata name="pageSetupDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>325, 17</value>
   </metadata>
-  <metadata name="rentDataBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>606, 60</value>
-  </metadata>
-  <metadata name="rentCarDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>438, 60</value>
-  </metadata>
   <metadata name="rentCarDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>508, 17</value>
   </metadata>
@@ -438,6 +440,12 @@
   </metadata>
   <metadata name="rentDataTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>829, 60</value>
+  </metadata>
+  <metadata name="rentCarDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 103</value>
+  </metadata>
+  <metadata name="rentDataBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>185, 103</value>
   </metadata>
   <metadata name="rentDataTableAdapter2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>408, 103</value>
