@@ -110,6 +110,15 @@
             this.alamatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alamatDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noTelponDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lamaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mulaiDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.akhirDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label2 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -1275,7 +1284,19 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.noDataGridViewTextBoxColumn1,
+            this.namaDataGridViewTextBoxColumn1,
+            this.alamatDataGridViewTextBoxColumn1,
+            this.noTelponDataGridViewTextBoxColumn1,
+            this.unitDataGridViewTextBoxColumn1,
+            this.lamaDataGridViewTextBoxColumn1,
+            this.mulaiDataGridViewTextBoxColumn1,
+            this.akhirDataGridViewTextBoxColumn1,
+            this.statusDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.rentDataBindingSource1;
             this.dataGridView2.Location = new System.Drawing.Point(31, 87);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
@@ -1591,6 +1612,78 @@
             this.noDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.noDataGridViewTextBoxColumn.Name = "noDataGridViewTextBoxColumn";
             // 
+            // noDataGridViewTextBoxColumn1
+            // 
+            this.noDataGridViewTextBoxColumn1.DataPropertyName = "No";
+            this.noDataGridViewTextBoxColumn1.HeaderText = "No";
+            this.noDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.noDataGridViewTextBoxColumn1.Name = "noDataGridViewTextBoxColumn1";
+            this.noDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // namaDataGridViewTextBoxColumn1
+            // 
+            this.namaDataGridViewTextBoxColumn1.DataPropertyName = "Nama";
+            this.namaDataGridViewTextBoxColumn1.HeaderText = "Nama";
+            this.namaDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.namaDataGridViewTextBoxColumn1.Name = "namaDataGridViewTextBoxColumn1";
+            this.namaDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // alamatDataGridViewTextBoxColumn1
+            // 
+            this.alamatDataGridViewTextBoxColumn1.DataPropertyName = "Alamat";
+            this.alamatDataGridViewTextBoxColumn1.HeaderText = "Alamat";
+            this.alamatDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.alamatDataGridViewTextBoxColumn1.Name = "alamatDataGridViewTextBoxColumn1";
+            this.alamatDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // noTelponDataGridViewTextBoxColumn1
+            // 
+            this.noTelponDataGridViewTextBoxColumn1.DataPropertyName = "NoTelpon";
+            this.noTelponDataGridViewTextBoxColumn1.HeaderText = "NoTelpon";
+            this.noTelponDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.noTelponDataGridViewTextBoxColumn1.Name = "noTelponDataGridViewTextBoxColumn1";
+            this.noTelponDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // unitDataGridViewTextBoxColumn1
+            // 
+            this.unitDataGridViewTextBoxColumn1.DataPropertyName = "Unit";
+            this.unitDataGridViewTextBoxColumn1.HeaderText = "Unit";
+            this.unitDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.unitDataGridViewTextBoxColumn1.Name = "unitDataGridViewTextBoxColumn1";
+            this.unitDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // lamaDataGridViewTextBoxColumn1
+            // 
+            this.lamaDataGridViewTextBoxColumn1.DataPropertyName = "Lama";
+            this.lamaDataGridViewTextBoxColumn1.HeaderText = "Lama";
+            this.lamaDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.lamaDataGridViewTextBoxColumn1.Name = "lamaDataGridViewTextBoxColumn1";
+            this.lamaDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // mulaiDataGridViewTextBoxColumn1
+            // 
+            this.mulaiDataGridViewTextBoxColumn1.DataPropertyName = "Mulai";
+            this.mulaiDataGridViewTextBoxColumn1.HeaderText = "Mulai";
+            this.mulaiDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.mulaiDataGridViewTextBoxColumn1.Name = "mulaiDataGridViewTextBoxColumn1";
+            this.mulaiDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // akhirDataGridViewTextBoxColumn1
+            // 
+            this.akhirDataGridViewTextBoxColumn1.DataPropertyName = "Akhir";
+            this.akhirDataGridViewTextBoxColumn1.HeaderText = "Akhir";
+            this.akhirDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.akhirDataGridViewTextBoxColumn1.Name = "akhirDataGridViewTextBoxColumn1";
+            this.akhirDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // statusDataGridViewTextBoxColumn1
+            // 
+            this.statusDataGridViewTextBoxColumn1.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn1.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.statusDataGridViewTextBoxColumn1.Name = "statusDataGridViewTextBoxColumn1";
+            this.statusDataGridViewTextBoxColumn1.Width = 125;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1698,5 +1791,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mulaiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn akhirDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn alamatDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noTelponDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lamaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mulaiDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn akhirDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn1;
     }
 }

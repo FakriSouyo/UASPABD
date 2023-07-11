@@ -85,7 +85,7 @@ namespace Pabd1
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
             conn.Open();
-            SqlCommand cmd = new SqlCommand(" insert into RentData values (@No,@Nama,@Alamat,@NoTelpon,@Unit,@Lama,@Mulai,@Akhir,@Status) ", conn);
+            SqlCommand cmd = new SqlCommand(" insert into RentData values (@No,@Nama,@Alamat,@NoTelpon,@Unit,@Lama,@Mulai_sewa,@Akhir_sewa,@Status) ", conn);
             cmd.Parameters.AddWithValue("@No", int.Parse(text_No.Text));
             cmd.Parameters.AddWithValue("@Nama",text_nama.Text);
             cmd.Parameters.AddWithValue("@Alamat", text_alamat.Text);
@@ -95,8 +95,8 @@ namespace Pabd1
             cmd.Parameters.AddWithValue("@Unit", selectedUnit);
 
             cmd.Parameters.AddWithValue("@Lama", text_lama.Text);
-            cmd.Parameters.AddWithValue("@Mulai", DatePicker1.Value);
-            cmd.Parameters.AddWithValue("@Akhir", DatePicker2.Value);
+            cmd.Parameters.AddWithValue("@Mulai_sewa", DatePicker1.Value);
+            cmd.Parameters.AddWithValue("@Akhir_sewa", DatePicker2.Value);
 
             string selectedStatus = comboBox2.SelectedItem.ToString();
             cmd.Parameters.AddWithValue("@Status", selectedStatus);
@@ -132,7 +132,7 @@ namespace Pabd1
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("Update RentData set Nama=@Nama, Alamat=@Alamat, No Telp=@NoTelpon, Unit=@Unit, lama=@Lama, Mulai=@Mulai, Akhir=@Akhir, Status=@Status where No = @No ", conn);
+            SqlCommand cmd = new SqlCommand("Update RentData set Nama=@Nama, Alamat=@Alamat, NoTelpon=@NoTelpon, Unit=@Unit, lama=@Lama, Mulai_sewa=@Mulai_sewa, Akhir_sewa=@Akhir_sewa, Status=@Status where No = @No ", conn);
 
             cmd.Parameters.AddWithValue("@No", int.Parse(text_No.Text));
             cmd.Parameters.AddWithValue("@Nama", text_nama.Text);
@@ -143,8 +143,8 @@ namespace Pabd1
             cmd.Parameters.AddWithValue("@Unit", selectedUnit);
 
             cmd.Parameters.AddWithValue("@Lama", text_lama.Text);
-            cmd.Parameters.AddWithValue("@Mulai", DatePicker1.Value);
-            cmd.Parameters.AddWithValue("@Akhir", DatePicker2.Value);
+            cmd.Parameters.AddWithValue("@Mulai_sewa", DatePicker1.Value.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@Akhir_sewa", DatePicker2.Value.);
 
             string selectedStatus = comboBox2.SelectedItem.ToString();
             cmd.Parameters.AddWithValue("@Status", selectedStatus);
