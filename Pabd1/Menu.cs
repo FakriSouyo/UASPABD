@@ -18,7 +18,9 @@ namespace Pabd1
         public Menu()
         {
             InitializeComponent();
-          
+            FILLDG();
+
+
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -77,10 +79,13 @@ namespace Pabd1
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM RentData", conn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM RentData where No = @No", conn);
+            cmd.Parameters.AddWithValue("@No", int.Parse(text_cari.Text));
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
+
+            DataGridView1.DataSource = dt;
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)
@@ -119,16 +124,7 @@ namespace Pabd1
 
         }
 
-        private void bunifuButton8_Click(object sender, EventArgs e)
-        {
-            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM RentData", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-
-            DataGridView1.DataSource = dt;
-        }
+    
 
         private void bunifuButton6_Click(object sender, EventArgs e)
         {
@@ -178,6 +174,25 @@ namespace Pabd1
 
             conn.Close();
             MessageBox.Show("Berhasil Di Hapus");
+        }
+
+        private void FILLDG()
+
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            string query = "Select * From RentData";
+            SqlDataAdapter sda = new SqlDataAdapter( query, conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            DataGridView1.DataSource = dt;
+            conn.Close();
+
+        }
+
+        private void text_No_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
