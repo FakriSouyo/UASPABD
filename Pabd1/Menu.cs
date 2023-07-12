@@ -72,6 +72,8 @@ namespace Pabd1
         }
 
         private void Button5_Click(object sender, EventArgs e)
+
+
         {
             SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
             conn.Open();
@@ -95,8 +97,8 @@ namespace Pabd1
             cmd.Parameters.AddWithValue("@Unit", selectedUnit);
 
             cmd.Parameters.AddWithValue("@Lama", text_lama.Text);
-            cmd.Parameters.AddWithValue("@Mulai_sewa", DatePicker1.Value);
-            cmd.Parameters.AddWithValue("@Akhir_sewa", DatePicker2.Value);
+            cmd.Parameters.AddWithValue("@Mulai_sewa", DatePicker1.Value.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@Akhir_sewa", DatePicker2.Value.ToString("yyyy-MM-dd"));
 
             string selectedStatus = comboBox2.SelectedItem.ToString();
             cmd.Parameters.AddWithValue("@Status", selectedStatus);
@@ -144,7 +146,7 @@ namespace Pabd1
 
             cmd.Parameters.AddWithValue("@Lama", text_lama.Text);
             cmd.Parameters.AddWithValue("@Mulai_sewa", DatePicker1.Value.ToString("yyyy-MM-dd"));
-            cmd.Parameters.AddWithValue("@Akhir_sewa", DatePicker2.Value.);
+            cmd.Parameters.AddWithValue("@Akhir_sewa", DatePicker2.Value.ToString("yyyy-MM-dd"));
 
             string selectedStatus = comboBox2.SelectedItem.ToString();
             cmd.Parameters.AddWithValue("@Status", selectedStatus);
@@ -153,6 +155,29 @@ namespace Pabd1
 
             conn.Close();
             MessageBox.Show("Berhasil Di Update");
+        }
+
+        private void bunifuButton9_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM RentData", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            dataGridView2.DataSource = dt;
+        }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("Delete RentData where No = @No ", conn);
+            cmd.Parameters.AddWithValue("@No", int.Parse(text_No.Text));
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+            MessageBox.Show("Berhasil Di Hapus");
         }
     }
 }
