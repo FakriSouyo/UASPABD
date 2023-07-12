@@ -127,6 +127,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RentCarDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RentCarDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentCarDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +200,17 @@
     </None>
     <None Include="RentCarDataSet3.xss">
       <DependentUpon>RentCarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RentCarDataSet4.xsc">
+      <DependentUpon>RentCarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="RentCarDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentCarDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RentCarDataSet4.xss">
+      <DependentUpon>RentCarDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

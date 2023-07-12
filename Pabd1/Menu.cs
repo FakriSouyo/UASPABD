@@ -19,12 +19,15 @@ namespace Pabd1
         {
             InitializeComponent();
             FILLDG();
+            FILLDG3();
 
 
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'rentCarDataSet4.Unit' table. You can move, or remove it, as needed.
+            this.unitTableAdapter.Fill(this.rentCarDataSet4.Unit);
 
         }
 
@@ -35,7 +38,7 @@ namespace Pabd1
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            bunifuPages1.SetPage("Paymenthistory");
+            bunifuPages1.SetPage("CRUD");
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
@@ -193,6 +196,57 @@ namespace Pabd1
         private void text_No_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuButton8_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM Unit", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            DataGridView3.DataSource = dt;
+        }
+
+        private void FILLDG3()
+
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            string query = "Select * From Unit";
+            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            DataGridView3.DataSource = dt;
+            conn.Close();
+
+        }
+
+        private void DataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Update_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=FAKRIE\FAKRI;Initial Catalog=RentCar;User ID=sa;Password=123");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("Update Unit set Nama_Unit=@Nama_Unit, jml_digunakan=@jml_digunakan, jml_dibooking=@jml_dibooking where id_unit = @id_unit ", conn);
+
+            cmd.Parameters.AddWithValue("@id_unit", int.Parse(ID.Text));
+            cmd.Parameters.AddWithValue("@jml_digunakan", text_digunakan.Text);
+            cmd.Parameters.AddWithValue("@jml_dibooking", text_dibooking.Text);
+
+            string selectedInit = comboBox3.SelectedItem.ToString();
+            cmd.Parameters.AddWithValue("@Nama_unit", selectedInit);
+
+           
+
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+            MessageBox.Show("Berhasil Di Update");
         }
     }
 }
